@@ -1,0 +1,210 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add some spacing and styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+
+
+/* Add custom styles for specific sections */
+#home {
+  text-align: center;
+  background-image: url(cover-photo.png);
+  height: 200px;
+  background-size: 100%;
+  color: antiquewhite;
+}
+
+
+#about .about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  
+}
+#about{
+  background-color: rgb(58, 62, 58);
+  color: white;
+  padding: 20px;
+}
+
+#about img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%; /* Add border-radius property to create a circular shape */
+  overflow: hidden; /* Hide any overflow beyond the circular shape */
+  border: 2px solid white; /* Add a border to create the outer circle */
+  padding: 5px; /* Add padding to create space between the circles */
+}
+
+
+#about .description {
+  flex-grow: 1;
+}
+.indented-paragraph {
+  text-indent: 1em;
+}
+
+
+.project-heading h2 {
+  text-align: center;
+}
+
+#projects {
+  text-align: left;
+  background-color: rgb(132, 129, 125);
+}
+
+.project-heading {
+  margin-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #ccc; /* Add a border to each project */
+  border-radius: 5px; /* Add some border radius for a rounded corner effect */
+  padding: 10px; /* Add some padding to create space within the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle 3D effect */
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-description {
+  margin-top: 10px;
+}
+
+#skills{
+  background-image: url(cover-photo2.png);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  
+}
+
+.skills-grid div {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+#education{
+  background-image: url(cover-photo3.png);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.education-grid div {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.education-grid h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.education-grid p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+#contact {
+  text-align: center;
+  background-color: dimgrey;
+}
+
+#contact p{
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.contact-list {
+  list-style-type: none;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Change flex-direction to stack items vertically */
+  }
+  
+  nav ul li {
+    margin: 10px 0; /* Add vertical margin to create spacing between list items */
+  }
+
+  #about .about-container {
+    flex-direction: column; /* Reverse the flex-direction to place the image above the description */
+    gap: 20px;
+  }
+}
+
+
+
+
